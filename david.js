@@ -315,6 +315,7 @@ function changeData(x) {
   console.log('change data', x);
   renderd3(x);
   lanceChangeData(x);
+  michaelChangeData(x);
 }
 
 
