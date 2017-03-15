@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>P3 Visualizations</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">P3 Visualizations</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#summary">Summary</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Visuals</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">P3 Visualizations</div>
+                <div class="intro-heading">SFFD around USF</div>
+                <a href="#summary" class="page-scroll btn btn-xl">Take a Look</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- summary Section -->
+    <section id="summary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Summary</h2>
+                    <h3 class="section-subheading text-muted">Data and Processing.</h3>
+                </div>
+            </div>
+             <div class="section">
+              <p class="section-text">Produced by SFOpen Data, the <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service-December-2016/97i8-upbq?category=Public-Safety&view_name=Fire-Department-Calls-for-Service-December-2016">Fire Department Call for Service</a> data set contains fire unit responses to calls in December, 2016.
+                 It includes information pertaining to the call type, the exact call date, the neighborhood/district of the call, and more. It essentially contains everything you would want to know about calls for service to the SFFD from December 1st to December 31st, 2016.</p>
+              <p class="section-text">
+                Our group, P3, focuses on a subset of the original data.
+                We hope to highlight any alarming or intriguing patterns that occur around the school that we attend every day.
+                Therefore, our data limits its selection to the five neighborhoods/districts closest to the University of San Francisco.
+
+              </p>
+            </div>
+            <!-- <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Visualizations</h2>
+                    <h3 class="section-subheading text-muted">Click on a neighborhood to modify the visualizations.</h3>
+                </div>
+            </div>
+
+            <center class="">
+              <div class="col-md-12">
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(0)">
+                        <img src="img/hoods/hoods.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">All</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(1)">
+                        <img src="img/hoods/western.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">Western Addition</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(2)">
+                        <img src="img/hoods/presidio.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">Presidio</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(3)">
+                        <img src="img/hoods/usf.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">USF</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(4)">
+                        <img src="img/hoods/richmond.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">Inner Richmond</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 team-member hood-item">
+                    <a onclick="changeData(5)">
+                        <img src="img/hoods/haight.jpg" class="img-responsive img-circle" alt="">
+                        </img>
+                        <p class="text-muted">Haight Ashbury</p>
+                    </a>
+                </div>
+              </div>
+
+
+            </center>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <link rel="stylesheet" href="./index.css">
+            <div class="row">
+              <h3 class="text-center">Heat Map</h3>
+              <svg id="heat-map"></svg>
+              <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+              <script src="./david.js"></script>
+            </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About the Data</h2>
+                    <h3 class="section-subheading text-muted">In-depth overviews of each visualization.</h3>
+                </div>
+            </div>
+           <div class="section">
+            <p class="section-text"><strong>Multiline Chart:</strong> Using a subset from the San Francisco Fire Department Calls for Service data set, this prototype concentrates on the four flanking neighborhoods that surround the University of San Francisco (Haight Ashbury, Western Addition, Inner Richmond, Presidio) to include USF/Lone Mountain. The graph is a breakdown of the amount of service calls pertaining to "Potientially Life Threatening" and "Non-Life Threatening" events throughout the month of December 2016. Event activity is separated by neighborhood with the bottom of the y-axis representing no activity and the top representing the maximum activity. Likewise with the x-axis; left to right in a linear fashion.</p>
+            <p class="section-text"><strong>Small Multiples Bar Graph:</strong> This visualization uses grouped bars to analyze the types of calls that are placed in these specific districts. The types of calls placed are categorized as “Alarms”, “Fire”, “Non Life-Threatening” and “Potentially Life-Threatening”. To distinguish the call types they each are given a different color in the visualization. The bar height measures the percentage of calls for that specific type were placed in the given district. Each district follows a similar trend where “Fire” calls occur the least, followed by “Non Life-Threatening”, “Alarm” and “Potentially Life-Threatening” in that order. The distinguishing district however is Presidio where “Fire” calls are placed the most. This is probably due to their dense tree population, that differs from the rest of San Francisco.</p>
+            <p class="section-text"><strong>Heat Map:</strong> Focusing on the the five districts around the University of San Francisco, this prototype highlights the average response time for calls to the SFFD. It calculates average this measure in minutes, subtracting the response time from the received time of each call. Also, the heat map plots these response hour per hour in an everage December day in 2016. Next, the heat map uses a diverging color sequence to encode data. Cool blue colors signal slow response times. Dark red colors clue quick response times. Any white space did not include enough information for encodable data. Overall, it seems that the slowest times occur around 4-6pm, perhaps because the most calls happen in the late afternoon and early evening.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Meet P3</h2>
+                    <h3 class="section-subheading text-muted">3 Filipinos + D3 = P3</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Michael Liston</h4>
+                        <p class="bio-text">Michael Liston is Bay Area native, living between San Mateo and San Francisco the majority of his life. After a small stint working for the computer publication PC Magazine, he enlisted in the United States Marine Corps. He currently majors in data science and plans to continue graduate studies at St. Mary's college in business analytics.</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Lance Fernando</h4>
+                        <p class="bio-text">Lance Fernando is a junior majoring in Data Science with a concentration in computational analytics. When he is not diving deep into data or messing around on Kaggle, Lance enjoys playing music and cycling. After graduation, he hopes to get accepted into the Master of Science in Analytics program at USF to continue his studies in Data Science.</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>David Katz</h4>
+                        <p class="bio-text">David Katz is a junior computer science major and music minor at the University of San Francisco. In his spare time, he teaches people how to program in his online coding tutorials. One day, he hopes to start his own tech education company. Please reach out and connect with him. Visit <a href="http://davidtkatz.com/#/" target="_blank">his website</a> to find more about his online courses, or click the icons below!</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a target="_blank" href="https://github.com/15Dkatz"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a target="_blank" href="https://medium.com/@dtkatz"><i class="fa fa-medium"></i></a>
+                            </li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/david-katz-sf"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                Thank you for your time!
+                <!-- <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- TODO include prototypes? -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>
+                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+                                    <li>Client: Round Icons</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Project Heading</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

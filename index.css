@@ -1,0 +1,16 @@
+.x-tick {
+  font-size: 11px;
+}
+
+.y-tick {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hood-item {
+  cursor: pointer;
+}
+
+.bio-text {
+  text-align: left;
+}
