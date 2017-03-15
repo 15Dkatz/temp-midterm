@@ -4,7 +4,7 @@
 
 .y-tick {
   font-size: 14px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .hood-item {
@@ -13,4 +13,14 @@
 
 .bio-text {
   text-align: left;
+}
+
+.lance-tick {
+  font-size: 14px;
+  /*font-weight: bold;*/
+}
+
+.lance-label {
+  /*font-weight: bold;*/
+  font-size: 16px;
 }

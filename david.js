@@ -1,29 +1,27 @@
-// create an object which maps the subsection of data
-
 var sections = {
   0: {
     title: 'global',
-    path: './data/data.json'
+    path: './david_data/data.json'
   },
   1: {
     title: 'Western Addition',
-    path: './data/western.json'
+    path: './david_data/western.json'
   },
   2: {
     title: 'Presidio',
-    path: './data/presidio.json'
+    path: './david_data/presidio.json'
   },
   3: {
     title: 'Lone Mountiain/USF',
-    path: './data/lone.json'
+    path: './david_data/lone.json'
   },
   4: {
     title: 'Inner Richmond',
-    path: './data/inner.json'
+    path: './david_data/inner.json'
   },
   5: {
     title: 'Haight Ashbury',
-    path: './data/haight.json'
+    path: './david_data/haight.json'
   }
 }
 
@@ -79,7 +77,10 @@ function renderd3(section) {
 
 
   // TODO change color scale to the blue default
-  var colorScale = d3.scaleSequential(d3.interpolateViridis);
+  var colorScale = d3.scaleSequential(d3.interpolateReds);
+
+  // var colorScale = d3.scaleOrdinal()
+  //     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
 
   function rowAccessor(d) {
     var row = {};
@@ -163,7 +164,7 @@ function renderd3(section) {
       .attr("y", 0)
       .attr("width", config.plot.width)
       .attr("height", config.plot.height)
-      .style("fill", "#e0e0e0");
+      .style("fill", "#FFF3ED");
   }
 
   function hour(x) {
@@ -308,10 +309,13 @@ function renderd3(section) {
 }
 
 
+// overall call for each button
 
 function changeData(x) {
   console.log('change data', x);
   renderd3(x);
+  lanceChangeData(x);
 }
 
-renderd3(0);
+
+changeData(0);
