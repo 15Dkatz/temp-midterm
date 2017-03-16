@@ -313,9 +313,9 @@ function renderd3(section) {
 
 function changeData(x) {
   console.log('change data', x);
-  renderd3(x);
-  lanceChangeData(x);
   michaelChangeData(x);
+  lanceChangeData(x);
+  renderd3(x);
 }
 
 

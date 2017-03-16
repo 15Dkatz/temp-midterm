@@ -20,6 +20,11 @@ var m_sections = {
 }
 
 function m_renderd3(section) {
+  var orig_div = document.getElementById('lines');
+  console.log('orig_div', orig_div);
+  while (orig_div.hasChildNodes()) {
+    orig_div.removeChild(orig_div.lastChild)
+  }
   var translate = function(x,y){
     return "translate(" + String(x) + "," + String(y) + ")";
   }
@@ -51,13 +56,12 @@ function m_renderd3(section) {
 
   var xAxis = d3.axisBottom(x)
   	.ticks(5);
-  /*var xAxis = d3.svg.axis().scale(x)
-  	.orient("bottom").ticks(5);*/
 
   var yAxis = d3.axisLeft(y)
   	.ticks(5);
-  /*var yAxis = d3.svg.axis().scale(y)
-  	.orient("left").ticks(4);*/
+
+
+
   var data_path = m_sections[section].path;
 
   console.log('data m', data_path);
@@ -74,7 +78,12 @@ function m_renderd3(section) {
 		.key(function(d) {return d.callType;})
 		.entries(data);
 
-console.log(neighborhoods.length, "neighborhoods length");
+  console.log(neighborhoods.length, "neighborhoods length");
+
+
+  //
+  // var orig_div = d3.select("#lines");
+  // orig_div.selectAll("*").remove();
 
 	neighborhoods.forEach(function(s){
 		s.maxVal = d3.max(s.values, function(d){ return d.Freq;});
@@ -87,18 +96,15 @@ console.log(neighborhoods.length, "neighborhoods length");
 //console.log(neighborhoods.map(function(d){return d.values[0].values;}));
 //console.log(neighborhoods.map(function(d){return d.values;}));
 
+  if (neighborhoods.length === 1) {
+    height = 500 - margin.top - margin.bottom
+    y.range([500 - margin.top - margin.bottom, 0])
+  }
 
 
-  // var orig_div = d3.select("#lines");
-  // orig_div.selectAll("*").remove();
 	var svg = d3.select("#lines").selectAll("svg");
 
-
-  console.log('svg', svg);
-
-
-
-
+  console.log('neighborhoods', neighborhoods);
 			svg.data(neighborhoods.map(function(d){return d.values}))
 			.enter().append("svg")
 				.attr("width", width + margin.left + margin.right)
@@ -135,12 +141,13 @@ console.log(neighborhoods.length, "neighborhoods length");
     		return d[0].values[0].neighborhood; })
       .attr("x", 800)
       .attr("y", 0);
-
   })
 }
 
 function michaelChangeData(x) {
+
+  m_renderd3(x);
   m_renderd3(x);
 }
 
-michaelChangeData(0);
+// michaelChangeData(0);
