@@ -114,7 +114,7 @@ function m_renderd3(section) {
 
     g.append("path")
     		.attr("class", "line")
-    					.style("stroke", "red")
+    					.style("stroke", "steelblue")
     					.attr("d", function(d) {
     						// console.log(d[0].values)
     						return line(d[0].values);});
