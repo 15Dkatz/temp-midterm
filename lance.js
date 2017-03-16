@@ -44,8 +44,8 @@ function renderLanceD3(section) {
   var y = d3.scaleLinear()
       .rangeRound([height, 0]);
 
-  var z = d3.scaleOrdinal()
-      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+   var z = d3.scaleOrdinal()
+      .range(["#98abc5", "rgb(252, 163, 134)", "steelblue", "rgb(191, 23, 27)"]);
 
   var data = l_sections[section].path;
 
