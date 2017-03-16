@@ -140,7 +140,7 @@ function m_renderd3(section) {
     		// console.log(d[0].values[0].neighborhood, "d")
     		return d[0].values[0].neighborhood; })
       .attr("x", 800)
-      .attr("y", 0);
+      .attr("y", 2);
   })
 }
 
